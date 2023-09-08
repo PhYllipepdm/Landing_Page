@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto+Mono&display=swap');
+body{
+    font-family: 'Noto Sans', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#logo{
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+}
+h1{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color:  #610bc4;
+    font-weight: 200;
+    font-size: 30px;
+}
+ li{ 
+    display: inline-block;
+    margin: 20px;
+} 
+a{
+    color: #610bc4;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff0040;
+    transition: 0.3ms all;
+}
+#Cadastro{
+    border: 2px solid #610bc4;
+    padding: 10px;
+    border-radius: 20px;
+}
+#Cadastro:hover{
+    background-color: #610bc4;
+    color: white;
+}
+hr{
+    border-width: 2px solid;
+    border-color: #610bc4;
+}
+main{
+    flex-direction: row;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    padding: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    max-width: 500px;
+}
+button{
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    height: 20px;
+    padding: 20px;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background-color:#610bc4;
+    color: white;
+}
+button:hover{
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    height: 20px;
+    padding: 20px;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #610bc4;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width:450px) {
+    body{
+        width: 100%;
+        align-items:center;
+        justify-content: center;
+        margin: 10px;
+    }
+    header{
+        width: 100%;
+    }
+    hr{
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2{
+        font-size: 40px;
+        line-height: 35px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    main{
+        flex-direction: column;
+    }
+}
+@media (max-width:800px){
+    h2{
+        font-size: 45px;
+        line-height: 40px;
+    }
+}
+@media (max-width:1200px) {  
+    h2{
+        line-height: 50px;
+    }
+}
+/* Quando o usuário preferir o tema escuro (por exemplo, no sistema operacional) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: #fff;
+    }
+    /* Adicione mais estilos para outros elementos conforme necessário */
+}
